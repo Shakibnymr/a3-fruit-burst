@@ -42,11 +42,12 @@
   <body class="font-lato">
     <header>
         <!-- nav section -->
-      <nav class="container mx-auto h-24 bg-nav-bg rounded-full"> 
-       <div class="flex justify-evenly items-center ">
+        <!-- large and medium views -->
+      <nav class="container mx-auto h-24 lg:bg-nav-bg rounded-full"> 
+       <div class="hidden lg:flex justify-evenly items-center ">
         <!-- menu -->
         <div>
-            <ul class=" flex items-center  gap-x-6 font-medium text-white mt-5 ">
+            <ul class="flex items-center  gap-x-6 font-medium text-white mt-5 ">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
@@ -67,6 +68,27 @@
 
 
        </div>
+       <!-- mobile views -->
+
+       <div class=" container mx-auto flex items-center gap-x-14  lg:hidden">
+       <div class="  flex items-center gap-x-2 p-6  ">
+        <div class="w-[41px] ">  <img src="./images/logo.png" alt="gaming"></div>
+        <p class=" font-extrabold text-2xl text-black">Fruit Burst</p>
+    </div>
+    <div>
+        <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruit</li>
+            </ul>
+          </div>
+</div>
+</div>
       </nav>
       
     </header>
