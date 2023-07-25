@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
     <!-- tailwind and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- custom styles -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'nav-bg': "#F85559"
+            },
+          },
+        },
+      };
+    </script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
       }
-    }
-  </script>
-  <!-- lato font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<style>
-    .font-lato{
-        font-family: 'Lato', sans-serif;
-    }
-</style>
-</head>
-<body class="font-lato">
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/18695d40e9.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="font-lato">
     <header>
+        <!-- nav section -->
+      <nav class="container mx-auto h-24 bg-nav-bg rounded-full"> 
+       <div class="flex justify-evenly items-center ">
+        <!-- menu -->
+        <div>
+            <ul class=" flex items-center  gap-x-6 font-medium text-white mt-5 ">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruit</li>
+            </ul>
+        </div>
 
+<!-- logo -->
+        <div class="flex items-center gap-x-3 mt-5 ">
+            <div class="w-[55px] h-[60px]">  <img src="./images/logo.png" alt="gaming"></div>
+            <p class=" font-extrabold text-4xl text-white">Fruit Burst</p>
+        </div>
+<!-- search button -->
+<div class="mt-5 relative">
+    <input class="rounded-full w-[300px] p-3" type="search" placeholder="Search here">
+    <div class="absolute -mt-9 ml-64"><i class="fa-solid fa-magnifying-glass"></i></div>
+</div>
+
+
+       </div>
+      </nav>
+      
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-</body>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
